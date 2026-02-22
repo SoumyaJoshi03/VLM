@@ -1,0 +1,11 @@
+.env
+vlm/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.dockerignore
+.DS_Store
+Thumbs.db.env

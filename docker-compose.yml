@@ -1,0 +1,15 @@
+services:
+  vlm-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+      - USE_CUDA=1
+      - HF_HOME=/tmp/hf
+      - TRANSFORMERS_CACHE=/tmp/hf
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]

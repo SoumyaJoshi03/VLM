@@ -1,0 +1,42 @@
+{
+  "clip_id": "U0101_S0100_b007242",
+  "system_prompt": "You are a temporal warehouse operations model. Given sampled video frames from a 5-second clip, output ONLY valid JSON with keys: clip_id, dominant_operation, temporal_segment{start_frame,end_frame}, anticipated_next_operation, confidence.",
+  "note": "OpenPack RGB not available. Built from preprocessed/imuWithOperationLabel. Contains boundary-centered non-uniform sampling metadata.",
+  "source": {
+    "label_file": "/content/openpack-dataset/openpack/v1.0.0/preprocessed/imuWithOperationLabel/U0101-S0100.csv",
+    "label_column": "operation",
+    "fps_assumed": 25
+  },
+  "clip_span": {
+    "start_frame": 7180,
+    "end_frame": 7304
+  },
+  "boundary_center_frame": 7242,
+  "boundary_window": {
+    "start_frame": 7230,
+    "end_frame": 7254
+  },
+  "sampling": {
+    "strategy": "triangular_dense_near_boundary",
+    "sampled_frames": [
+      7185,
+      7188,
+      7225,
+      7237,
+      7245,
+      7251,
+      7260,
+      7262
+    ]
+  },
+  "target_json": {
+    "clip_id": "U0101_S0100_b007242",
+    "dominant_operation": "Unknown",
+    "temporal_segment": {
+      "start_frame": 7230,
+      "end_frame": 7254
+    },
+    "anticipated_next_operation": "Box Setup",
+    "confidence": 1.0
+  }
+}
